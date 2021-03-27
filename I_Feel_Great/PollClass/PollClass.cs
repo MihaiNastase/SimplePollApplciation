@@ -13,22 +13,22 @@ namespace PollClassLibrary
         //Used uint for responses count because it has the best restraints for the job. I believe that tailoring the variables with a suiting data type can eliminate from
         //the start some future bugs.
         //Unsigned because we don't count people backwards, and integers because unlike the British government, I don't plan to cut people in half by 2025.
-        public uint responseMaleYes { get; private set; }
-        public uint responseMaleNo { get; private set; }
-        public uint responseFemaleYes { get; private set; }
-        public uint responseFemaleNo { get; private set; }
-        private decimal totalResponses; //chose to make this parameter a decimal type to let C# make the type conversion for me when calculating percentages.
+        public uint ResponseMaleYes { get; private set; }
+        public uint ResponseMaleNo { get; private set; }
+        public uint ResponseFemaleYes { get; private set; }
+        public uint ResponseFemaleNo { get; private set; }
+        private decimal _totalResponses; //chose to make this parameter a decimal type to let C# make the type conversion for me when calculating percentages.
 
         /// <summary>
         /// Simple constructor used to intialise the class with fresh results.
         /// </summary>
         public PollClass()
         {
-            responseMaleYes = 0;
-            responseMaleNo = 0;
-            responseFemaleYes = 0;
-            responseFemaleNo = 0;
-            totalResponses = 0;
+            ResponseMaleYes = 0;
+            ResponseMaleNo = 0;
+            ResponseFemaleYes = 0;
+            ResponseFemaleNo = 0;
+            _totalResponses = 0;
         }
 
         /// <summary>
@@ -40,11 +40,11 @@ namespace PollClassLibrary
         /// <param name="femaleNo">Number of "No" responses from female users</param>
         public PollClass(uint maleYes, uint maleNo, uint femaleYes, uint femaleNo)
         {
-            responseMaleYes = maleYes;
-            responseMaleNo = maleNo;
-            responseFemaleYes = femaleYes;
-            responseFemaleNo = femaleNo;
-            totalResponses = responseMaleYes + responseMaleNo + responseFemaleYes + responseFemaleNo;
+            ResponseMaleYes = maleYes;
+            ResponseMaleNo = maleNo;
+            ResponseFemaleYes = femaleYes;
+            ResponseFemaleNo = femaleNo;
+            _totalResponses = ResponseMaleYes + ResponseMaleNo + ResponseFemaleYes + ResponseFemaleNo;
         }
 
         /// <summary>
@@ -60,26 +60,26 @@ namespace PollClassLibrary
             {
                 if (answer)
                 {
-                    responseMaleYes++;
-                    totalResponses++;
+                    ResponseMaleYes++;
+                    _totalResponses++;
                 }
                 else 
                 { 
-                    responseMaleNo++;
-                    totalResponses++;
+                    ResponseMaleNo++;
+                    _totalResponses++;
                 }
             }
             else
             {
                 if (answer)
                 {
-                    responseFemaleYes++;
-                    totalResponses++;
+                    ResponseFemaleYes++;
+                    _totalResponses++;
                 }
                 else
                 {
-                    responseFemaleNo++;
-                    totalResponses++;
+                    ResponseFemaleNo++;
+                    _totalResponses++;
                 }
             }
         }
@@ -89,11 +89,11 @@ namespace PollClassLibrary
         /// Returns the percentage of how many male users have responded with "Yes" from the total count.
         /// </summary>
         /// <returns>Percentage as decimal value</returns>
-        public decimal getPercentageMaleYesResponse()
+        public decimal getPercentageMaleYesResponse() 
         {
-            if (totalResponses != 0)
+            if (_totalResponses != 0)
             {
-                return (responseMaleYes / totalResponses) * 100;
+                return (ResponseMaleYes / _totalResponses) * 100;
             }
             else
             {
@@ -108,9 +108,9 @@ namespace PollClassLibrary
         /// <returns>Percentage as decimal value</returns>
         public decimal getPercentageMaleNoResponse()
         {
-            if (totalResponses != 0)
+            if (_totalResponses != 0)
             {
-                return (responseMaleNo / totalResponses) * 100;
+                return (ResponseMaleNo / _totalResponses) * 100;
             }
             else
             {
@@ -124,9 +124,9 @@ namespace PollClassLibrary
         /// <returns>Percentage as decimal value</returns>
         public decimal getPercentageFemaleYesResponse()
         {
-            if (totalResponses != 0)
+            if (_totalResponses != 0)
             {
-                return (responseFemaleYes / totalResponses) * 100;
+                return (ResponseFemaleYes / _totalResponses) * 100;
             }
             else
             {
@@ -140,9 +140,9 @@ namespace PollClassLibrary
         /// <returns>Percentage as decimal value</returns>
         public decimal getPercentageFemaleNoResponse()
         {
-            if (totalResponses != 0)
+            if (_totalResponses != 0)
             {
-                return (responseFemaleNo / totalResponses) * 100;
+                return (ResponseFemaleNo / _totalResponses) * 100;
             }
             else
             {
@@ -158,7 +158,7 @@ namespace PollClassLibrary
         /// <returns>Formatted poll results as String</returns>
         public override string ToString()
         {
-            return "We have " + totalResponses + " user responses, from which:\n" +
+            return "We have " + _totalResponses + " user responses, from which:\n" +
                    String.Format(" {0:0.##}% are from male users,\n", this.getPercentageMaleYesResponse() + this.getPercentageMaleNoResponse()) +
                    String.Format(" {0:0.##}% are from female users;\n", this.getPercentageFemaleYesResponse() + this.getPercentageFemaleNoResponse()) +
                    String.Format(" {0:0.##}% of users have responded with 'Yes',\n", this.getPercentageMaleYesResponse() + this.getPercentageFemaleYesResponse()) +

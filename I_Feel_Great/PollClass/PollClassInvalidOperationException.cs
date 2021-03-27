@@ -4,10 +4,10 @@ using System.Text;
 
 namespace PollClassLibrary
 {/// <summary>
-/// Custom exception to hande DivideByZero exception in the case when certain percentages are calculate but there are no responses to begin with.
+/// Custom exception to hande DivideByZero exception in the case when certain percentages are calculated but there are no responses to begin with.
 /// </summary>
     [Serializable]
-    class PollClassInvalidOperationException: Exception
+    public class PollClassInvalidOperationException: Exception
     {
         public PollClassInvalidOperationException()
         : base() {}
