@@ -1,0 +1,16 @@
+C:\Users\mihai\Desktop\Beier360\I_Feel_Great\I_Feel_Great_CLI\bin\Debug\netcoreapp3.1\I_Feel_Great_CLI.exe
+C:\Users\mihai\Desktop\Beier360\I_Feel_Great\I_Feel_Great_CLI\bin\Debug\netcoreapp3.1\I_Feel_Great_CLI.deps.json
+C:\Users\mihai\Desktop\Beier360\I_Feel_Great\I_Feel_Great_CLI\bin\Debug\netcoreapp3.1\I_Feel_Great_CLI.runtimeconfig.json
+C:\Users\mihai\Desktop\Beier360\I_Feel_Great\I_Feel_Great_CLI\bin\Debug\netcoreapp3.1\I_Feel_Great_CLI.runtimeconfig.dev.json
+C:\Users\mihai\Desktop\Beier360\I_Feel_Great\I_Feel_Great_CLI\bin\Debug\netcoreapp3.1\I_Feel_Great_CLI.dll
+C:\Users\mihai\Desktop\Beier360\I_Feel_Great\I_Feel_Great_CLI\bin\Debug\netcoreapp3.1\I_Feel_Great_CLI.pdb
+C:\Users\mihai\Desktop\Beier360\I_Feel_Great\I_Feel_Great_CLI\bin\Debug\netcoreapp3.1\PollClassLibrary.dll
+C:\Users\mihai\Desktop\Beier360\I_Feel_Great\I_Feel_Great_CLI\bin\Debug\netcoreapp3.1\PollClassLibrary.pdb
+C:\Users\mihai\Desktop\Beier360\I_Feel_Great\I_Feel_Great_CLI\obj\Debug\netcoreapp3.1\I_Feel_Great_CLI.csprojAssemblyReference.cache
+C:\Users\mihai\Desktop\Beier360\I_Feel_Great\I_Feel_Great_CLI\obj\Debug\netcoreapp3.1\I_Feel_Great_CLI.AssemblyInfoInputs.cache
+C:\Users\mihai\Desktop\Beier360\I_Feel_Great\I_Feel_Great_CLI\obj\Debug\netcoreapp3.1\I_Feel_Great_CLI.AssemblyInfo.cs
+C:\Users\mihai\Desktop\Beier360\I_Feel_Great\I_Feel_Great_CLI\obj\Debug\netcoreapp3.1\I_Feel_Great_CLI.csproj.CoreCompileInputs.cache
+C:\Users\mihai\Desktop\Beier360\I_Feel_Great\I_Feel_Great_CLI\obj\Debug\netcoreapp3.1\I_Feel_Great_CLI.csproj.CopyComplete
+C:\Users\mihai\Desktop\Beier360\I_Feel_Great\I_Feel_Great_CLI\obj\Debug\netcoreapp3.1\I_Feel_Great_CLI.dll
+C:\Users\mihai\Desktop\Beier360\I_Feel_Great\I_Feel_Great_CLI\obj\Debug\netcoreapp3.1\I_Feel_Great_CLI.pdb
+C:\Users\mihai\Desktop\Beier360\I_Feel_Great\I_Feel_Great_CLI\obj\Debug\netcoreapp3.1\I_Feel_Great_CLI.genruntimeconfig.cache
