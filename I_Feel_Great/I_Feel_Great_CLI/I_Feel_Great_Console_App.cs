@@ -3,7 +3,7 @@ using PollClassLibrary;
 
 namespace I_Feel_Great_CLI
 {
-    class Program
+    class I_Feel_Great_Console_App
     {
         static void Main(string[] args)
         {
@@ -11,6 +11,7 @@ namespace I_Feel_Great_CLI
             uint maleNo;
             uint femaleYes;
             uint femaleNo;
+
             Console.WriteLine("Create new poll by specifing the number of user responses:\n");
 
             //Getting input from the user + continous validation:
@@ -45,7 +46,15 @@ namespace I_Feel_Great_CLI
                     goto FemaleNo;
                 }
 
-                break;
+                if((maleYes + femaleYes + maleNo + femaleNo) != 0)
+                {
+                    break;
+                }
+                else
+                {
+                    Console.WriteLine("For the sake of the exercise, please provide at least 1 response from the users!");
+                }
+                
             }
             PollClass newPoll = new PollClass(maleYes, maleNo, femaleYes, femaleNo);
             Console.WriteLine(newPoll);
@@ -56,16 +65,10 @@ namespace I_Feel_Great_CLI
             //65% of total responses = X % of total "No" responses are coming from males
             //Solving for X gives us the formula {X = (100 / Total percentage of "No" responses) * Percentage of male responses} Therefore, the algorithm goes as follows:
 
-            try
-            {
-                decimal totalNo = newPoll.getPercentageMaleNoResponse() + newPoll.getPercentageFemaleNoResponse();
-                decimal X = (100 / totalNo) * newPoll.getPercentageMaleNoResponse();
-                Console.WriteLine(String.Format("There is a {0:0.##}% probability that a 'No' answer comes from a male user.", X));
-            }
-            catch (PollClassInvalidOperationException e)
-            {
-                Console.WriteLine(e.Message);
-            }
+            decimal totalNo = newPoll.getPercentageMaleNoResponse() + newPoll.getPercentageFemaleNoResponse();
+            decimal X = (100 / totalNo) * newPoll.getPercentageMaleNoResponse();
+            Console.WriteLine(String.Format("There is a {0:0.##}% probability that a 'No' answer comes from a male user.", X));
+            
         }
     }
 }

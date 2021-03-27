@@ -97,7 +97,7 @@ namespace PollClassLibrary
             }
             else
             {
-                throw new PollClassInvalidOperationException("No user responses registered!");
+                return -1;
             }
             
         }
@@ -114,7 +114,7 @@ namespace PollClassLibrary
             }
             else
             {
-                throw new PollClassInvalidOperationException("No user responses registered!");
+                return -1;
             }
         }
 
@@ -130,7 +130,7 @@ namespace PollClassLibrary
             }
             else
             {
-                throw new PollClassInvalidOperationException("No user responses registered!");
+                return -1;
             }
         }
 
@@ -146,7 +146,7 @@ namespace PollClassLibrary
             }
             else
             {
-                throw new PollClassInvalidOperationException("No user responses registered!");
+                return -1;
             }
         }
 
