@@ -17,6 +17,8 @@ namespace I_Feel_Great_CLI
             //Getting input from the user + continous validation:
             while (true)
             {
+            //Since there is more than one input required, and each input needs validation, to not create a loop for each input, labels were used 
+            //to jump back to the respective set of instructions and continue the loop from there again.
             MaleYes:
                 Console.WriteLine("Enter number of 'Yes' responses from male users:");
                 if (!uint.TryParse(Console.ReadLine(), out maleYes))
@@ -46,6 +48,8 @@ namespace I_Feel_Great_CLI
                     goto FemaleNo;
                 }
 
+                //If the poll would be empty, we would get a DivideByZeroException. Validating here averts a crash and also grants the user the chance to 
+                //input valid responses, since the loop restarts.
                 if((maleYes + femaleYes + maleNo + femaleNo) != 0)
                 {
                     break;
@@ -60,7 +64,7 @@ namespace I_Feel_Great_CLI
             Console.WriteLine(newPoll);
 
             //In the test case, we have 65% male responses which are all "No" and 17.5 female responses with "No", giving us that 82.5% of users 
-            //are not feeling great. Must be Monday.
+            //are not feeling great.
             //82.5% of total responses = 100% of total "No" responses
             //65% of total responses = X % of total "No" responses are coming from males
             //Solving for X gives us the formula {X = (100 / Total percentage of "No" responses) * Percentage of male responses} Therefore, the algorithm goes as follows:

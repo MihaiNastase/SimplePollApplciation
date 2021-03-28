@@ -8,16 +8,13 @@ namespace PollClassLibrary
 /// </summary>
     public class PollClass
     {
-        //Initially I wanted to use collection types to collect user data (i.e: List<(bool, bool)>) but soon I realised that it would be much simpler to implement counters
-        //because in the end, even if I were to implement some sort of lists, I would have to iterate over and over them to get those numbers.
-        //Used uint for responses count because it has the best restraints for the job. I believe that tailoring the variables with a suiting data type can eliminate from
-        //the start some future bugs.
-        //Unsigned because we don't count people backwards, and integers because unlike the British government, I don't plan to cut people in half by 2025.
+        //Choosing a data type with certain constraints for a variable can avert bugs and extra validation in the future.
+        //Therefore, since a number of users can only be a whole number and positive, unsigned integers were used.
         public uint ResponseMaleYes { get; private set; }
         public uint ResponseMaleNo { get; private set; }
         public uint ResponseFemaleYes { get; private set; }
         public uint ResponseFemaleNo { get; private set; }
-        private decimal _totalResponses; //chose to make this parameter a decimal type to let C# make the type conversion for me when calculating percentages.
+        private decimal _totalResponses; //Used a decimal type for this field to let C# make the type conversion when calculating percentages.
 
         /// <summary>
         /// Simple constructor used to intialise the class with fresh results.
@@ -32,7 +29,7 @@ namespace PollClassLibrary
         }
 
         /// <summary>
-        /// Used for testing and to make my life easier when completing the assignment task. Imagine inputing >100 responses by hand. 
+        /// Constructor in which we can specify an already existing number of different responses. Helps with testing and with the given assingment. 
         /// </summary>
         /// <param name="maleYes">Number of "Yes" responses from male users</param>
         /// <param name="maleNo">Number of "No" responses from male users</param>

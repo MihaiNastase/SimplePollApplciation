@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "qJsmvmb6yux2wDbGsOHBx3Fjg18XtdcWjHE2OXdxKuFJwJEj+b3SIGgVG1ZHa/7D7LcWF6OuWOPivZA60ZO58w==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\mihai\\Desktop\\Beier360\\I_Feel_Great\\I_Feel_Great_Xamshell_App\\I_Feel_Great_Xamshell_App.iOS\\I_Feel_Great_Xamshell_App.iOS.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\mihai\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.6.1\\xamarin.essentials.1.6.1.nupkg.sha512",
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\5.0.0.2012\\xamarin.forms.5.0.0.2012.nupkg.sha512"
+  ],
+  "logs": []
+}
