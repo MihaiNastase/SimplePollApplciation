@@ -3,9 +3,16 @@ public class MonoPackageManager_Resources {
 	public static String[] Assemblies = new String[]{
 		/* We need to ensure that "I_Feel_Great_Xamshell_App.Android.dll" comes first in this list. */
 		"I_Feel_Great_Xamshell_App.Android.dll",
+		"PollClassLibrary.dll",
 		"FormsViewGroup.dll",
 		"I_Feel_Great_Xamshell_App.dll",
+		"Microcharts.dll",
+		"Microcharts.Droid.dll",
+		"Microcharts.Forms.dll",
 		"Plugin.SharedTransitions.dll",
+		"SkiaSharp.dll",
+		"SkiaSharp.Views.Android.dll",
+		"SkiaSharp.Views.Forms.dll",
 		"Xamarin.AndroidX.Activity.dll",
 		"Xamarin.AndroidX.Annotation.dll",
 		"Xamarin.AndroidX.Annotation.Experimental.dll",

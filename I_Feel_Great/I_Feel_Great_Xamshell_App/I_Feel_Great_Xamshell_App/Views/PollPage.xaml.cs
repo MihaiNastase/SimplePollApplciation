@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using PollClassLibrary;
 
 namespace I_Feel_Great_Xamshell_App.Views
 {
@@ -17,6 +18,7 @@ namespace I_Feel_Great_Xamshell_App.Views
             InitializeComponent();
         }
 
+        //Event handlers to change color to entryes in case of form validation
         private void Color_OnFocused(Entry entry, EventArgs e)
         {
             entry.TextColor = Color.Black;
@@ -26,6 +28,7 @@ namespace I_Feel_Great_Xamshell_App.Views
             entry.TextColor = Color.Black;
         }
 
+        //Event handler on button press for results page and form validation
         private async void CalculateResults_Clicked(object sender, EventArgs e)
         {
             uint MaleYes;
@@ -65,13 +68,14 @@ namespace I_Feel_Great_Xamshell_App.Views
             } 
             else
             {
-                
-                await Navigation.PushAsync(new ResultsPage());
+                PollClass newPoll = new PollClass(MaleYes, MaleNo, FemaleYes, FemaleNo);
+                await Navigation.PushAsync(new ResultsPage(newPoll));
             }
 
             
         }
 
+        //Custom errors
         async void EmptyPollAlertButtonClicked(object sender, EventArgs e)
         {
             await DisplayAlert("Invalid Inputs", "The total count of responses must be greater than 0.", "OK");

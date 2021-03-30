@@ -147,6 +147,18 @@ namespace PollClassLibrary
             }
         }
 
+        //In the test case, we have 65% male responses which are all "No" and 17.5 female responses with "No", giving us that 82.5% of users 
+        //are not feeling great.
+        //82.5% of total responses = 100% of total "No" responses
+        //65% of total responses = X % of total "No" responses are coming from males
+        //Solving for X gives us the formula {X = (100 / Total percentage of "No" responses) * Percentage of male responses} Therefore, the algorithm goes as follows:
+        public decimal CalculateProbability()
+        {
+            decimal totalNo = this.getPercentageMaleNoResponse() + this.getPercentageFemaleNoResponse();
+            decimal X = (100 / totalNo) * this.getPercentageMaleNoResponse();
+            return X;
+        }
+
         /// <summary>
         /// Override of the ToString() method. 
         /// Used for testing purposes.

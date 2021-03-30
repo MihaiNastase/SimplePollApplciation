@@ -5,8 +5,14 @@
     <ContentPage.Content>
         <StackLayout>
             <Image Source="beier360.png"/>
-            <Label Text="Welcome to Xamarin.Forms!"
-                HorizontalOptions="CenterAndExpand" />
+            <Label Text="To aim of this mobile application is to calculate the probability of a 'No' answer to be submited by a male user. The responses
+from different users come from a hypothetical poll where they are asked if they 'feel great'. For the sake of the exercise, 65% of 
+answer came from male users, 35% from female users, all male users responded with 'No'while female users respond with either 
+a 'Yes' or 'No' in equal numbers."
+                HorizontalOptions="CenterAndExpand" 
+                Padding="20,0,20,0"
+                FontSize="18"
+                />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

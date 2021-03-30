@@ -14,3 +14,7 @@ C:\Users\mihai\Desktop\Beier360\I_Feel_Great\I_Feel_Great_Xamshell_App\I_Feel_Gr
 C:\Users\mihai\Desktop\Beier360\I_Feel_Great\I_Feel_Great_Xamshell_App\I_Feel_Great_Xamshell_App\obj\Debug\netstandard2.0\Views\PollPage.xaml.g.cs
 C:\Users\mihai\Desktop\Beier360\I_Feel_Great\I_Feel_Great_Xamshell_App\I_Feel_Great_Xamshell_App\obj\Debug\netstandard2.0\Views\AboutPage.xaml.g.cs
 C:\Users\mihai\Desktop\Beier360\I_Feel_Great\I_Feel_Great_Xamshell_App\I_Feel_Great_Xamshell_App\obj\Debug\netstandard2.0\Views\ResultsPage.xaml.g.cs
+C:\Users\mihai\Desktop\Beier360\I_Feel_Great\I_Feel_Great_Xamshell_App\I_Feel_Great_Xamshell_App\bin\Debug\netstandard2.0\PollClassLibrary.dll
+C:\Users\mihai\Desktop\Beier360\I_Feel_Great\I_Feel_Great_Xamshell_App\I_Feel_Great_Xamshell_App\bin\Debug\netstandard2.0\PollClassLibrary.pdb
+C:\Users\mihai\Desktop\Beier360\I_Feel_Great\I_Feel_Great_Xamshell_App\I_Feel_Great_Xamshell_App\obj\Debug\netstandard2.0\I_Feel_Great_Xamshell_App.csprojAssemblyReference.cache
+C:\Users\mihai\Desktop\Beier360\I_Feel_Great\I_Feel_Great_Xamshell_App\I_Feel_Great_Xamshell_App\obj\Debug\netstandard2.0\I_Feel_Great_Xamshell_App.csproj.CopyComplete

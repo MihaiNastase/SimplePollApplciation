@@ -11,7 +11,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "I_Feel_Great_Xamshell_App.A
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "I_Feel_Great_Xamshell_App.iOS", "I_Feel_Great_Xamshell_App\I_Feel_Great_Xamshell_App.iOS\I_Feel_Great_Xamshell_App.iOS.csproj", "{134F21C5-7BF3-4073-B8D3-A5B246A2AC88}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "I_Feel_Great_Xamshell_App", "I_Feel_Great_Xamshell_App\I_Feel_Great_Xamshell_App\I_Feel_Great_Xamshell_App.csproj", "{2C86E8C2-3C83-4948-B66D-A94ADB622C8F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "I_Feel_Great_Xamshell_App", "I_Feel_Great_Xamshell_App\I_Feel_Great_Xamshell_App\I_Feel_Great_Xamshell_App.csproj", "{2C86E8C2-3C83-4948-B66D-A94ADB622C8F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

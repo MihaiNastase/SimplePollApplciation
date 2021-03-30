@@ -6,3 +6,4 @@ C:\Users\mihai\Desktop\Beier360\I_Feel_Great\PollClass\obj\Debug\netstandard2.0\
 C:\Users\mihai\Desktop\Beier360\I_Feel_Great\PollClass\obj\Debug\netstandard2.0\PollClassLibrary.csproj.CoreCompileInputs.cache
 C:\Users\mihai\Desktop\Beier360\I_Feel_Great\PollClass\obj\Debug\netstandard2.0\PollClassLibrary.dll
 C:\Users\mihai\Desktop\Beier360\I_Feel_Great\PollClass\obj\Debug\netstandard2.0\PollClassLibrary.pdb
+C:\Users\mihai\Desktop\Beier360\I_Feel_Great\PollClass\obj\Debug\netstandard2.0\PollClassLibrary.csprojAssemblyReference.cache
