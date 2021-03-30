@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "qJsmvmb6yux2wDbGsOHBx3Fjg18XtdcWjHE2OXdxKuFJwJEj+b3SIGgVG1ZHa/7D7LcWF6OuWOPivZA60ZO58w==",
+  "dgSpecHash": "4HiELPGF+YQxxZxCtcwHplxj6WbqhY4eMcQVDH9T4qUvJk0xwS7aQZbZ/KIgnf4V6Z8dUQMZA2rIb9tY13yjPw==",
   "success": true,
   "projectFilePath": "C:\\Users\\mihai\\Desktop\\Beier360\\I_Feel_Great\\I_Feel_Great_Xamshell_App\\I_Feel_Great_Xamshell_App.iOS\\I_Feel_Great_Xamshell_App.iOS.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mihai\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.6.1\\xamarin.essentials.1.6.1.nupkg.sha512",
-    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\5.0.0.2012\\xamarin.forms.5.0.0.2012.nupkg.sha512"
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\5.0.0.2012\\xamarin.forms.5.0.0.2012.nupkg.sha512",
+    "C:\\Users\\mihai\\.nuget\\packages\\xamarin.plugin.sharedtransitions\\2.4.0\\xamarin.plugin.sharedtransitions.2.4.0.nupkg.sha512"
   ],
   "logs": []
 }

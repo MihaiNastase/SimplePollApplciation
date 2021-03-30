@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="I_Feel_Great_Xamshell_App.Views.PollPage">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="simpleLabelStyle" TargetType="Label">
+                <Setter Property="FontSize" Value="15"/>
+            </Style>
+            <Style x:Key="entryStyle" TargetType="Entry">
+                <Setter Property="MaxLength" Value="6"/>
+                <Setter Property="Placeholder" Value="0"/>
+                <Setter Property="Keyboard" Value="Numeric"/>
+                <Setter Property="ClearButtonVisibility" Value="WhileEditing"/>
+                <Setter Property="TextColor" Value="Black"/>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <StackLayout Margin="20,35,20,20">
+            
+            <Label Text="I Feel Great!"
+                   FontFamily="Poppins"
+                   FontAttributes="Bold"
+                   TextColor="Black"
+                   FontSize="40"
+                   HorizontalOptions="CenterAndExpand"
+                   Padding="0,0,0,20"/>
+            
+            <Label Text="Number of 'Yes' responses from male users:"
+                   Style="{StaticResource simpleLabelStyle}"/>
+            
+            <Entry ReturnType="Next"
+                   x:Name="maleYes"
+                   Style="{StaticResource entryStyle}"
+                   Focused="Color_OnFocused"
+                   Unfocused="Color_OnUnfocused"/>
+            
+            <Label Text="Number of 'No' responses from male users:"
+                   Style="{StaticResource simpleLabelStyle}"/>
+
+            <Entry ReturnType="Next"
+                   x:Name="maleNo"
+                   Style="{StaticResource entryStyle}"
+                   Focused="Color_OnFocused"
+                   Unfocused="Color_OnUnfocused"/>
+            
+            <Label Text="Number of 'Yes' responses from female users:"
+                   Style="{StaticResource simpleLabelStyle}"/>
+
+            <Entry ReturnType="Next"
+                   x:Name="femaleYes"
+                   Style="{StaticResource entryStyle}"
+                   Focused="Color_OnFocused"
+                   Unfocused="Color_OnUnfocused"/>
+            
+            <Label Text="Number of 'No' responses from female users:"
+                   Style="{StaticResource simpleLabelStyle}"/>
+            
+            <Entry ReturnType="Go"
+                   x:Name="femaleNo"
+                   Style="{StaticResource entryStyle}"
+                   Focused="Color_OnFocused"
+                   Unfocused="Color_OnUnfocused"
+                   Completed="CalculateResults_Clicked"/>
+
+            <Button x:Name="CalculateResults"
+                    BorderRadius="25"
+                    BorderWidth="3"
+                    BorderColor="#ffb300"
+                    Text="Calculate" 
+                    Clicked="CalculateResults_Clicked"
+                    FontSize="17"
+                    TextColor="White"
+                    FontAttributes="Bold"
+                    Margin="0,20,0,0">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="1,0">
+                        <GradientStop Color="#ffb300" Offset="0.1" />
+                        <GradientStop Color="Turquoise" Offset="1.0" />
+                    </LinearGradientBrush>
+                    </Button.Background>
+            </Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

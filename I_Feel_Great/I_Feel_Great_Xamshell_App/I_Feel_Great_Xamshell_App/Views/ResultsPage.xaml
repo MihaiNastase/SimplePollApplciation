@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="I_Feel_Great_Xamshell_App.Views.ResultsPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Welcome to Xamarin.Forms!"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" 
+                />
+            <Button Text="Return" 
+                    Clicked="ReturnButton_Clicked"
+                    BorderRadius="25"
+                    BorderWidth="3"
+                    BorderColor="#ffb300"
+                    FontSize="17"
+                    TextColor="White"
+                    FontAttributes="Bold"
+                    Margin="0,20,0,0">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="1,0">
+                        <GradientStop Color="Turquoise" Offset="0.1" />
+                        <GradientStop Color="#ffb300" Offset="1.0" />
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

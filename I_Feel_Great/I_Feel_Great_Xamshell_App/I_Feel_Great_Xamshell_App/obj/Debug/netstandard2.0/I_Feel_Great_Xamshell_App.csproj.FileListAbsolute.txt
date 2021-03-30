@@ -2,14 +2,8 @@ C:\Users\mihai\Desktop\Beier360\I_Feel_Great\I_Feel_Great_Xamshell_App\I_Feel_Gr
 C:\Users\mihai\Desktop\Beier360\I_Feel_Great\I_Feel_Great_Xamshell_App\I_Feel_Great_Xamshell_App\bin\Debug\netstandard2.0\I_Feel_Great_Xamshell_App.dll
 C:\Users\mihai\Desktop\Beier360\I_Feel_Great\I_Feel_Great_Xamshell_App\I_Feel_Great_Xamshell_App\bin\Debug\netstandard2.0\ref\I_Feel_Great_Xamshell_App.dll
 C:\Users\mihai\Desktop\Beier360\I_Feel_Great\I_Feel_Great_Xamshell_App\I_Feel_Great_Xamshell_App\bin\Debug\netstandard2.0\I_Feel_Great_Xamshell_App.pdb
-C:\Users\mihai\Desktop\Beier360\I_Feel_Great\I_Feel_Great_Xamshell_App\I_Feel_Great_Xamshell_App\obj\Debug\netstandard2.0\I_Feel_Great_Xamshell_App.csprojAssemblyReference.cache
 C:\Users\mihai\Desktop\Beier360\I_Feel_Great\I_Feel_Great_Xamshell_App\I_Feel_Great_Xamshell_App\obj\Debug\netstandard2.0\App.xaml.g.cs
 C:\Users\mihai\Desktop\Beier360\I_Feel_Great\I_Feel_Great_Xamshell_App\I_Feel_Great_Xamshell_App\obj\Debug\netstandard2.0\AppShell.xaml.g.cs
-C:\Users\mihai\Desktop\Beier360\I_Feel_Great\I_Feel_Great_Xamshell_App\I_Feel_Great_Xamshell_App\obj\Debug\netstandard2.0\Views\AboutPage.xaml.g.cs
-C:\Users\mihai\Desktop\Beier360\I_Feel_Great\I_Feel_Great_Xamshell_App\I_Feel_Great_Xamshell_App\obj\Debug\netstandard2.0\Views\ItemDetailPage.xaml.g.cs
-C:\Users\mihai\Desktop\Beier360\I_Feel_Great\I_Feel_Great_Xamshell_App\I_Feel_Great_Xamshell_App\obj\Debug\netstandard2.0\Views\ItemsPage.xaml.g.cs
-C:\Users\mihai\Desktop\Beier360\I_Feel_Great\I_Feel_Great_Xamshell_App\I_Feel_Great_Xamshell_App\obj\Debug\netstandard2.0\Views\LoginPage.xaml.g.cs
-C:\Users\mihai\Desktop\Beier360\I_Feel_Great\I_Feel_Great_Xamshell_App\I_Feel_Great_Xamshell_App\obj\Debug\netstandard2.0\Views\NewItemPage.xaml.g.cs
 C:\Users\mihai\Desktop\Beier360\I_Feel_Great\I_Feel_Great_Xamshell_App\I_Feel_Great_Xamshell_App\obj\Debug\netstandard2.0\I_Feel_Great_Xamshell_App.AssemblyInfoInputs.cache
 C:\Users\mihai\Desktop\Beier360\I_Feel_Great\I_Feel_Great_Xamshell_App\I_Feel_Great_Xamshell_App\obj\Debug\netstandard2.0\I_Feel_Great_Xamshell_App.AssemblyInfo.cs
 C:\Users\mihai\Desktop\Beier360\I_Feel_Great\I_Feel_Great_Xamshell_App\I_Feel_Great_Xamshell_App\obj\Debug\netstandard2.0\I_Feel_Great_Xamshell_App.csproj.CoreCompileInputs.cache
@@ -17,3 +11,6 @@ C:\Users\mihai\Desktop\Beier360\I_Feel_Great\I_Feel_Great_Xamshell_App\I_Feel_Gr
 C:\Users\mihai\Desktop\Beier360\I_Feel_Great\I_Feel_Great_Xamshell_App\I_Feel_Great_Xamshell_App\obj\Debug\netstandard2.0\I_Feel_Great_Xamshell_App.dll
 C:\Users\mihai\Desktop\Beier360\I_Feel_Great\I_Feel_Great_Xamshell_App\I_Feel_Great_Xamshell_App\obj\Debug\netstandard2.0\ref\I_Feel_Great_Xamshell_App.dll
 C:\Users\mihai\Desktop\Beier360\I_Feel_Great\I_Feel_Great_Xamshell_App\I_Feel_Great_Xamshell_App\obj\Debug\netstandard2.0\I_Feel_Great_Xamshell_App.pdb
+C:\Users\mihai\Desktop\Beier360\I_Feel_Great\I_Feel_Great_Xamshell_App\I_Feel_Great_Xamshell_App\obj\Debug\netstandard2.0\Views\PollPage.xaml.g.cs
+C:\Users\mihai\Desktop\Beier360\I_Feel_Great\I_Feel_Great_Xamshell_App\I_Feel_Great_Xamshell_App\obj\Debug\netstandard2.0\Views\AboutPage.xaml.g.cs
+C:\Users\mihai\Desktop\Beier360\I_Feel_Great\I_Feel_Great_Xamshell_App\I_Feel_Great_Xamshell_App\obj\Debug\netstandard2.0\Views\ResultsPage.xaml.g.cs

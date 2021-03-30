@@ -5,6 +5,17 @@ namespace I_Feel_Great_CLI
 {
     class I_Feel_Great_Console_App
     {
+        //In the test case, we have 65% male responses which are all "No" and 17.5 female responses with "No", giving us that 82.5% of users 
+        //are not feeling great.
+        //82.5% of total responses = 100% of total "No" responses
+        //65% of total responses = X % of total "No" responses are coming from males
+        //Solving for X gives us the formula {X = (100 / Total percentage of "No" responses) * Percentage of male responses} Therefore, the algorithm goes as follows:
+        public static decimal CalculateProbability(PollClass poll)
+        {
+            decimal totalNo = poll.getPercentageMaleNoResponse() + poll.getPercentageFemaleNoResponse();
+            decimal X = (100 / totalNo) * poll.getPercentageMaleNoResponse();
+            return X;
+        }
         static void Main(string[] args)
         {
             uint maleYes;
@@ -17,8 +28,9 @@ namespace I_Feel_Great_CLI
             //Getting input from the user + continous validation:
             while (true)
             {
-            //Since there is more than one input required, and each input needs validation, to not create a loop for each input, labels were used 
-            //to jump back to the respective set of instructions and continue the loop from there again.
+            //I wanted to create a decent CLI so the user is prompted for each value and provide validation for each input at the same time.
+            //I used goto to avoid using extra loops but mainly to keep the code clean and readable since it's a small aplication (technically using goto
+            //creates a loop because the program iterates over the same block of instructions until the user provides valid input).
             MaleYes:
                 Console.WriteLine("Enter number of 'Yes' responses from male users:");
                 if (!uint.TryParse(Console.ReadLine(), out maleYes))
@@ -56,22 +68,16 @@ namespace I_Feel_Great_CLI
                 }
                 else
                 {
-                    Console.WriteLine("For the sake of the exercise, please provide at least 1 response from the users!");
+                    Console.WriteLine("The poll cannot be empty!");
                 }
                 
             }
+            //Creating new class based on collected parameters.
             PollClass newPoll = new PollClass(maleYes, maleNo, femaleYes, femaleNo);
+            //Printing the poll status:
             Console.WriteLine(newPoll);
-
-            //In the test case, we have 65% male responses which are all "No" and 17.5 female responses with "No", giving us that 82.5% of users 
-            //are not feeling great.
-            //82.5% of total responses = 100% of total "No" responses
-            //65% of total responses = X % of total "No" responses are coming from males
-            //Solving for X gives us the formula {X = (100 / Total percentage of "No" responses) * Percentage of male responses} Therefore, the algorithm goes as follows:
-
-            decimal totalNo = newPoll.getPercentageMaleNoResponse() + newPoll.getPercentageFemaleNoResponse();
-            decimal X = (100 / totalNo) * newPoll.getPercentageMaleNoResponse();
-            Console.WriteLine(String.Format("There is a {0:0.##}% probability that a 'No' answer comes from a male user.", X));
+            //Displaying the answer to the exercise problem:
+            Console.WriteLine(String.Format("There is a {0:0.##}% probability that a 'No' answer comes from a male user.", CalculateProbability(newPoll)));
             
         }
     }
